@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+  <category>
+    <pattern>hello</pattern>
+    <template>
+        <random>
+            <li>hye</li>
+            <li>Holla</li>
+            <li>AOA</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>hi</pattern>
+    <template>
+        <random>
+            <li>hye</li>
+            <li>Holla</li>
+            <li>AOA</li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>^ your name ^</pattern>
+    <template>Propertian</template>
+  </category>
+  
+  <category>
+    <pattern>my name is *</pattern>
+    <template>Nice to meet you <set name="username"><star /></set></template>
+  </category>
+  
+  <category>
+    <pattern>^ help me ^</pattern>
+    <template>I can show you different plots ranging in area, price and other discription if you want.</template>
+  </category>
+  
+  <category>
+    <pattern>^ show ^</pattern>
+    <template>
+        <carousel>
+            <card>
+                <image>https://ms.ilaan.com/mediaresources/images/blogs/actual/d7211f23-0dff-4012-91fb-c5495b808747.jpg</image>
+                <title>Canal View Housing Society</title>
+                <subtitle>Opposite Johar Town</subtitle>
+                <button>
+                    <text>Description</text>
+                    <postback>canal</postback>
+                </button>
+            </card>
+            
+            <card>
+                <image>https://www.zameen.com/blog/wp-content/uploads/2014/05/fazaia-phase-II2.bmp</image>
+                <title>Fazaia Housing Society</title>
+                <subtitle>Phase ||</subtitle>
+                <button>
+                    <text>Description</text>
+                    <postback>fazaia</postback>
+                </button>
+            </card>
+        </carousel>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>canal</pattern>
+      <template>
+            <card>
+              <image>https://wowreads.com/wp-content/uploads/2016/09/best-housing-schemes-in-lahore-1024x685.jpg</image>
+              <title>Canal View Housing Society</title>
+              <subtitle>5-marla Price: 500000
+                        1-kanal Price: 1000000
+                        2-marla Price: 2000000
+              </subtitle>
+            </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>fazaia</pattern>
+      <template>
+            <card>
+              <image>https://wowreads.com/wp-content/uploads/2016/09/best-housing-schemes-in-lahore-1.jpg</image>
+              <title>Fazaia Housing Society</title>
+              <subtitle>5-marla Price: 800000
+                        1-kanal Price: 1500000
+                        2-marla Price: 3000000
+              </subtitle>
+            </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>^ nice ^</pattern>
+      <template>
+          <random>
+              <li>Thanks</li>
+              <li>Pleasure</li>
+              <li>Anything else?</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+    <pattern>^ facilities ^</pattern>
+    <template>Electricty, better Severage, Gas, Park, Mosque, Hospital, and all other important need of life.</template>
+  </category>
+  
+  <category>
+      <pattern>^ great ^</pattern>
+      <template>
+          <random>
+              <li>Thanks</li>
+              <li>Pleasure</li>
+              <li>Anything else?</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+    <pattern>^ information ^</pattern>
+    <template>Please call at 0300-1234567 or came at our office address as mentioned in description of specific society.</template>
+  </category>
+  
+  <category>
+      <pattern>^ meet ^</pattern>
+      <template>Yeah Sure, tomorrow at 9am-3pm.</template>
+  </category>
+  
+  <category>
+    <pattern>^ thanks ^</pattern>
+    <template>
+        <random>
+            <li>Take Care</li>
+            <li>ALLAH HAFIZ</li>
+        </random>
+    </template>
+  </category>
+</aiml>
